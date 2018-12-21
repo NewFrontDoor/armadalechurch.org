@@ -11,6 +11,10 @@ const placeholderEvents = [
     "startdate": "Every Sunday 9:30AM"
   },
   {
+    "title": "Christmas Day Service",
+    "startdate": "Tuesday, 25 December, 2018 9:00AM"
+  },
+  {
     "title": "Growth Groups",
     "startdate": "TBA"
   },
@@ -20,10 +24,6 @@ const placeholderEvents = [
   },
   {
     "title": "Prayer Meeting",
-    "startdate": "TBA"
-  },
-  {
-    "title": "Church Lunch",
     "startdate": "TBA"
   }
 ];
@@ -55,7 +55,7 @@ class UpcomingEvents extends Component {
 
     var upcomingEvents = _.map(placeholderEvents, (event) => {
       return (
-        <UpcomingEvent title={event.title} startdate={event.startdate} />
+        <UpcomingEvent key={_.uniqueId()} title={event.title} startdate={event.startdate} />
       )
     });
 

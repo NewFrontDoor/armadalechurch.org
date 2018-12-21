@@ -4,6 +4,7 @@ import fetch from 'isomorphic-fetch';
 //Change this URL when the API is set up for the new website
 const DRUPAL_URL = "https://api.armadalechurch.org/api/views/";
 const DRUPAL_SEARCH_SERMONS = DRUPAL_URL + "all_sermons_api?display_id=services_1&filters";
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
 
 //Example suffix: all_sermons_api?filters[preacher]=keith&filters[title]=reality
 
@@ -36,3 +37,16 @@ export function searchDrupalSermons(query, type, callback) {
       console.log(error);
     })
 }
+
+export function getVerseOfTheDay(url, callback) {
+  fetch(CORS_PROXY + url)
+    .then(resp => resp.json())
+    .then(function (data) {
+      callback(data.votd);
+      console.log(data.votd)
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+}
+

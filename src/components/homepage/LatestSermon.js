@@ -17,9 +17,9 @@ class LatestSermon extends Component {
   componentWillMount() {
     var that = this;
 
-    getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
+    /*getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
       that.setState({ latestSermon: data });
-    });
+    });*/
 
   }
   render() {

@@ -13,7 +13,8 @@ class WhereToFindUs extends Component {
               <h2 >Where to Find Us</h2>
               <div className="content">
                 <GoogleMap id="map_canvas" height="360px" />
-                <div>Sundays 9:30am. <a href="https://goo.gl/maps/44Jee1PhBhP2">Armadale Congregational Church</a></div>
+                <div> <a href="https://goo.gl/maps/44Jee1PhBhP2">Armadale Congregational Church</a></div>
+                <div>Sundays 9:30am</div>
                 <div>150 Forrest Rd</div>
                 <div>Armadale WA 6112</div>  </div>
             </div>
