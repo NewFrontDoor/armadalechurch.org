@@ -150,6 +150,9 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/ChildrensChurch" >Childrens Church</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/PraiseTeam" >Praise Team</a>
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -170,6 +173,10 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/MensBreakfast" >Men's Breakfast</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WomensMinistry" >Women's Ministry</a>
+                                        </li>
+
                                       </ul>
                                     </div>
                                   </div>
@@ -184,9 +191,15 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Brigades" >Boys & Girls Brigades</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Helps" >Helps</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Bread" >Bread Ministry</a>
+                                        </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/DaleChirsitanSchool" >Dale Christian School</a>
+                                          <a href="https://dalecs.wa.edu.au/about/" target="_blank" rel="noopener noreferrer" >Dale Christian School</a>
                                         </li>
                                       </ul>
                                     </div>

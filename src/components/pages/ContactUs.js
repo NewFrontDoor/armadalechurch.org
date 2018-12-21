@@ -147,7 +147,7 @@ class ContactUs extends Component {
 
                         <div class="col-xs-12 col-sm-6">
                           <h5>Address</h5>
-                          <p>Come visit us on Sundays @ Xam:</p>
+                          <p>Come visit us on Sundays @ 9:30am:</p>
                           <p>Armadale Congregational Church<br />
                             150 Forrest Rd<br />
                             Armadale WA 6112</p>
@@ -156,7 +156,7 @@ class ContactUs extends Component {
                         <div class="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/ArmadaleCong/" target="_blank" rel="noreferrer noopener">/ArmadaleCong</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:">Contact Email</a></p>
+                            <b>Email:</b>&nbsp;<a href="mailto:">Coming soon</a></p>
                         </div>
 
                       </div>
