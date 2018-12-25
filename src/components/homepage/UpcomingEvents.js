@@ -11,10 +11,6 @@ const placeholderEvents = [
     "startdate": "Every Sunday 9:30AM"
   },
   {
-    "title": "Christmas Day Service",
-    "startdate": "Tuesday, 25 December, 2018 9:00AM"
-  },
-  {
     "title": "Growth Groups",
     "startdate": "TBA"
   },
@@ -24,6 +20,10 @@ const placeholderEvents = [
   },
   {
     "title": "Prayer Meeting",
+    "startdate": "TBA"
+  },
+  {
+    "title": "Church Lunch",
     "startdate": "TBA"
   }
 ];
