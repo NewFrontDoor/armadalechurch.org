@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import logo from '../assets/img/Logo.svg';
+import HistoryPDF from '../assets/History of ACC.pdf'
 
 class Navigation extends Component {
   render() {
@@ -84,6 +85,7 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/SundayService" >Sunday Service</a>
                                         </li>
+
                                       </ul>
                                     </div>
                                   </div>
@@ -99,6 +101,9 @@ class Navigation extends Component {
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Vision" >Our Team</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href={HistoryPDF} target="_blank" >Our History</a>
                                         </li>
                                       </ul>
                                     </div>

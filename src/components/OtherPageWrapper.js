@@ -15,6 +15,8 @@ import Events from './pages/Events';
 
 
 import ContactUs from './pages/ContactUs';
+import WhatWeBelieve from './pages/WhatWeBelieve';
+import SundayService from './pages/SundayService';
 
 
 class OtherPageWrapper extends Component {
@@ -29,6 +31,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
 
+          <Route exact path="/WhatWeBelieve" component={WhatWeBelieve} />
+          <Route exact path="/SundayService" component={SundayService} />
           <Route exact path="/OurPeople" component={OurPeople} />
           <Route exact path="/Events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
