@@ -13,10 +13,23 @@ import SermonSeriesPage from './pages/SermonSeriesPage';
 import OurPeople from './pages/OurPeople';
 import Events from './pages/Events';
 
-
 import ContactUs from './pages/ContactUs';
 import WhatWeBelieve from './pages/WhatWeBelieve';
-import SundayService from './pages/SundayService';
+import SundayService from './pages/AboutUs/SundayService';
+
+
+import PastoralCare from './pages/Ministries/PastoralCare';
+import ChildrensChurch from './pages/Ministries/ChildrensChurch';
+import PraiseTeam from './pages/Ministries/PraiseTeam';
+import GrowthGroups from './pages/Ministries/GrowthGroups';
+import PrayerMeetings from './pages/Ministries/PrayerMeetings';
+import MensBreakfast from './pages/Ministries/MensBreakfast';
+import WomensMinistry from './pages/Ministries/WomensMinistry';
+import BoysGirlsBrigades from './pages/Ministries/BoysGirlsBrigades';
+import Helps from './pages/Ministries/Helps';
+import BreadMinistry from './pages/Ministries/BreadMinistry';
+import OurTeam from './pages/AboutUs/OurTeam';
+import OurVision from './pages/AboutUs/OurVision';
 
 
 class OtherPageWrapper extends Component {
@@ -36,6 +49,19 @@ class OtherPageWrapper extends Component {
           <Route exact path="/OurPeople" component={OurPeople} />
           <Route exact path="/Events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
+          <Route exact path="/Team" component={OurTeam} />
+          <Route exact path="/Vision" component={OurVision} />
+
+          <Route exact path="/PastoralCare" component={PastoralCare} />
+          <Route exact path="/ChildrensChurch" component={ChildrensChurch} />
+          <Route exact path="/PraiseTeam" component={PraiseTeam} />
+          <Route exact path="/GrowthGroups" component={GrowthGroups} />
+          <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
+          <Route exact path="/MensBreakfast" component={MensBreakfast} />
+          <Route exact path="/WomensMinistry" component={WomensMinistry} />
+          <Route exact path="/Brigades" component={BoysGirlsBrigades} />
+          <Route exact path="/Helps" component={Helps} />
+          <Route exact path="/Bread" component={BreadMinistry} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

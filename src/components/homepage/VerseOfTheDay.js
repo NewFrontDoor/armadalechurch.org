@@ -22,9 +22,13 @@ class VerseOfTheDay extends Component {
         if (this.state.votd) {
             votd =
                 (<div>
-                    {decode(this.state.votd.text)} - <a href={decode(this.state.votd.permalink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.reference)}</a>  <a href={decode(this.state.votd.copyrightlink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.copyright)}</a>
+                    {/*{decode(this.state.votd.text)} - <a href={decode(this.state.votd.permalink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.reference)}</a>  <a href={decode(this.state.votd.copyrightlink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.copyright)}</a>*/}
+                    {decode(this.state.votd.text)} <br />
+                    <a href={decode(this.state.votd.permalink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.reference)}</a><br />
+
 
                     <p className="padding-top-15">
+                        <a href={decode(this.state.votd.copyrightlink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.copyright)}</a><br />
                         Powered by <a href="https://www.biblegateway.com" target="_blank" rel="noreferrer noopener">BibleGateway.com</a>
                     </p>
                 </div>)
@@ -32,14 +36,23 @@ class VerseOfTheDay extends Component {
         }
 
         return (
-
             < section >
-                <div id="votd">
-                    <h3>Verse of the Day</h3>
+                {/*<div id="votd">
+                    <h2>Verse of the Day</h2>
                     {votd}
+                </div>*/}
+                <div className="col-md-4 col-xs-12">
+                    <div className="region region-content-2-2">
+                        <div className="block block-block">
+                            <h2 >Verse of the Day</h2>
+                            <div className="content">
+                                {votd}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </section >
+
         );
     }
 }

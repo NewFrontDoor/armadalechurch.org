@@ -68,10 +68,10 @@ class UpcomingEvents extends Component {
             <h2 className="header">Upcoming Events</h2>
 
             <div className="content">
-              <div className="upcoming-events">
+              {/*<div className="upcoming-events">
                 {upcomingEvents}
               </div>
-              <p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>
+              <p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>*/}
             </div>
           </div>
         </div>

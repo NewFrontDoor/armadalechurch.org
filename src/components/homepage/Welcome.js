@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import VOTD from './VerseOfTheDay';
+//import VOTD from './VerseOfTheDay';
 
 
 class Welcome extends Component {
@@ -27,7 +27,7 @@ class Welcome extends Component {
                               <p>Pastor Forrest</p>
                             </div>
 
-                            <VOTD />
+                            {/*<VOTD />*/}
 
                           </div>
                           </div>

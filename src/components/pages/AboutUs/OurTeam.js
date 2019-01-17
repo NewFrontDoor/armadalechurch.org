@@ -1,10 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import churchImg from '../../assets/img/church.jpg';
 
-
-class SundayService extends Component {
-
+class OurTeam extends Component {
     render() {
         return (
             <section>
@@ -13,7 +10,7 @@ class SundayService extends Component {
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                                 <div id="page-title-block" className="page-title block">
-                                    <h1>Sunday Service</h1>
+                                    <h1>Our Team</h1>
                                 </div>
                             </div>
 
@@ -34,39 +31,21 @@ class SundayService extends Component {
                         <div className="row">
                             <div id="main-content-region" className="main-content col-xs-12">
                                 <div className="region region-content">
+                                    <div id="block-system-main" className="block block-system">
+                                        <div className="content">
+                                            <div className="node node-page clearfix">
+                                                <div className="content">
 
-                                    <div className="content">
-                                        <div className="node node-page clearfix">
-                                            <div className="content">
-                                                <div className="row">
-                                                    <div className="col-md-12">
-                                                        <img src={churchImg} alt="" className="img img-responsive padding-bottom-20 align-center" /> <br />
-
-                                                        <h4 className="text-center">Join us on Sundays at 9:30am - 11:00am for our weekly service.</h4>
-
-                                                    </div>
+                                                    Sorry this page is still under construction.
+                        </div>
 
 
-
-
-                                                </div>
 
                                             </div>
-
-
-
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -75,4 +54,4 @@ class SundayService extends Component {
     }
 }
 
-export default SundayService;
+export default OurTeam;
