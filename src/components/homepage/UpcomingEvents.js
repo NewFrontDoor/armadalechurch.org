@@ -65,7 +65,7 @@ class UpcomingEvents extends Component {
 
           <div className="block block-block">
 
-            <h2 className="header">Upcoming Events</h2>
+            <h2 className="header header-custom-color">Upcoming Events</h2>
 
             <div className="content">
               {/*<div className="upcoming-events">

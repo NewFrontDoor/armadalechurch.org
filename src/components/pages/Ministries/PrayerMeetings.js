@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import PrayerMeetingsImg from '../../../assets/img/PrayerMeetings.jpg';
 
 class PrayerMeetings extends Component {
   render() {
@@ -36,7 +37,19 @@ class PrayerMeetings extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          Sorry this page is still under construction.
+                          <h4 className="ministry-text">
+                            Prayer is a core value of our church community – and so we try to make it a part of everything we do. However, there are two initiatives that target prayer specifically. One is our monthly prayer meeting after the lunch that follows the church service (12:30pm every 1st Sunday of each month) - which all are welcome to attend. Here we pray for each other, our community, and the world – as well as specific ministries and missions of our church. The other is our “Prayer Chain”, where matters for prayer are emailed to people in our church to pray for.
+                          </h4>
+
+                          <h4 className="ministry-text">
+                            If you would like prayer – either public or private - please email <a href="mailto:pastor@armadalechurch.com">pastor@armadalechurch.com</a> (currently unavailable).
+                          </h4>
+                          <br />
+                          <img src={PrayerMeetingsImg} alt="" className="ministryImg img img-responsive image-center" />
+                          <br />
+                          <p className="subtext">
+                            Be joyful always; pray continually; give thanks in all circumstances - for this is God's will for you in Christ Jesus. (1 Thessalonians 5:16-18)
+                          </p>
                         </div>
 
 

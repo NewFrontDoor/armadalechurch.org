@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import VisionImg from '../../../assets/img/OurVision.jpg';
 
 class OurVision extends Component {
     render() {
@@ -36,7 +37,19 @@ class OurVision extends Component {
                                             <div className="node node-page clearfix">
                                                 <div className="content">
 
-                                                    Sorry this page is still under construction.
+                                                    <p>
+                                                        We are currently in the process of expressing our vision in a fresh way, however the big picture of what church is hasn’t changed over the last 2000 years.
+                                                    </p>
+
+                                                    <p>
+                                                        In a word, we are disciples making disciples. Because we are convinced that Jesus is God’s ruling king, we are looking to grow, each one of us, in our knowledge and love of him - and express that authentically in our church and wider community. For some of us, this means getting to know Jesus for the first time. For others, this may mean continuing a process of growth in Jesus that started 50 years ago or more! The important thing is every member of the church community growing, because God wants us to know him, love each other, and reach out with the message of Jesus so others can enjoy life with God.
+                                                    </p>
+
+                                                    <p className="subtext">
+                                                        In a word, we are disciples making disciples. Because we are convinced that Jesus is God’s ruling king, we are looking to grow, each one of us, in our knowledge and love of him - and express that authentically in our church and wider community. For some of us, this means getting to know Jesus for the first time. For others, this may mean continuing a process of growth in Jesus that started 50 years ago or more! The important thing is every member of the church community growing, because God wants us to know him, love each other, and reach out with the message of Jesus so others can enjoy life with God.
+                                                    </p>
+                                                    <br />
+                                                    <img src={VisionImg} alt="" className="img img-responsive" />
                                                 </div>
 
 

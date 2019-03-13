@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import WomensMinistryImg from '../../../assets/img/WomensMinistry.jpg';
 
 class WomensMinistry extends Component {
   render() {
@@ -36,7 +37,18 @@ class WomensMinistry extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          Sorry this page is still under construction.
+                          <h4 className="ministry-text">
+                            Various special events are organised throughout the year for women to get together and be encouraged. These include women's breakfasts, Valentine's Day morning tea, and guest speaker events. All women are welcome – young, old, single, or married. Contact <a href="mailto:info@armadalechurch.com">info@armadalechurch.com</a> (currently unavailable) for details.
+                          </h4>
+                          <br />
+                          <img src={WomensMinistryImg} alt="" className="img img-responsive image-center" />
+                          <br />
+                          <p className="subtext">
+                            Charm is deceptive, and beauty is fleeting;<br />
+                            but a woman who fears the LORD is to be praised. <br />
+                            (Proverbs 31:30)
+                          </p>
+
                         </div>
 
 

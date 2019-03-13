@@ -58,17 +58,40 @@
   }
 
   .bg-color-theme {
-    background-color: #5087c7;
+    background-color: #00003e;
   }
 
 
-@media (max-width: 767px) {
   
-    .nestor-main-menu .navbar-toggle {
-      border: 1px solid #5087c7 !important;
-      background: #5087c7 !important;
+  /*Mobile menu colour*/
+  .nestor-main-menu .navbar-toggle{
+      border: 1px solid #00003e !important;
+      background: #00003e !important;
       color: #fff !important;
+  }
+
+
+@media (min-width:768px) and (max-width:979px){
+  .nestor-main-menu .navbar-toggle{
+    display: inline;
+    width: 250px;
+    border-radius: 0;
+    padding: 12px;
+    float: none;
+    margin: 0 0 30px;
+    
+  }
+  .nav-collapse{
+    margin-top: -55px !important;
+  }
+}
+
+@media (max-width: 767px) {
+    .nestor-main-menu .navbar-toggle {
+      width: 100%;
+      max-width: 250px;
     }
+
     .nav-collapse{
       margin-top: -55px !important;
     }
@@ -78,31 +101,74 @@
   
 .sermon-load-more, .sermon-search-button {
     padding: 2px 35px !important;
-    border-color: #5087c7;
-    color: #5087c7;
+    border-color: #00003e;
+    color: #00003e;
   }
   
 
   /*Change btn border color to fit theme*/
   
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    border-color: #5087c7 !important;
-    background-color: #5087c7 !important;
+    border-color: #00003e !important;
+    background-color: #00003e !important;
   }
   
   .btn-primary{
-    border-color: #5087c7;
+    border-color: #00003e;
+    color: #00003e;
   }
 
 #votd{
   padding-top: 60px;
 }
 
+.header-custom-color{
+  color: #00003e;
+}
+
 /* Site Text color if desired to be black*/
-/*
+
 body{
   color: #000;
-}*/
+}
+
+.subtext{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.historyImg{
+  margin: 10px;
+  width: 60%;
+  float: right;
+  max-width: 600px;
+}
+
+.ministryImg{
+  max-height: 400px;
+}
+
+@media (max-width: 767px) {
+  .historyImg {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: 780px) {
+  .sm-br {
+    display: none;
+  }
+}
+
+.our-team-text{
+  padding: 10px;
+}
+
+h4.ministry-text{
+  line-height: 30px;
+}
 
 
 

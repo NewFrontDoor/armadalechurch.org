@@ -30,6 +30,7 @@ import Helps from './pages/Ministries/Helps';
 import BreadMinistry from './pages/Ministries/BreadMinistry';
 import OurTeam from './pages/AboutUs/OurTeam';
 import OurVision from './pages/AboutUs/OurVision';
+import OurHistory from './pages/AboutUs/OurHistory';
 
 
 class OtherPageWrapper extends Component {
@@ -47,6 +48,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/WhatWeBelieve" component={WhatWeBelieve} />
           <Route exact path="/SundayService" component={SundayService} />
           <Route exact path="/OurPeople" component={OurPeople} />
+          <Route exact path="/OurHistory" component={OurHistory} />
           <Route exact path="/Events" component={Events} />
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/Team" component={OurTeam} />

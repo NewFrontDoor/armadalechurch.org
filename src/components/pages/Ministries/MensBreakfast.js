@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-
+import MensBreakfastImg from '../../../assets/img/MensBreakfast.jpg';
 class MensBreakfast extends Component {
   render() {
     return (
@@ -36,7 +36,18 @@ class MensBreakfast extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          Sorry this page is still under construction.
+                          <h4 className="ministry-text">
+                            Men get together for a manly(!) cooked breakfast each month on the verandah of one of our men’s homes. This is a great chance to get to know other men in an informal setting (and it’s free!). Contact <a href="mailto:info@armadalechurch.com">info@armadalechurch.com</a> (currently unavailable) for details.
+                          </h4>
+                          <br />
+                          <img src={MensBreakfastImg} alt="" className="ministryImg img img-responsive image-center" /><br />
+                          <p className="subtext">
+                            He makes grass grow for the cattle,<br />
+                            and plants for man to cultivate-- bringing forth food from the earth:<br />
+                            wine that gladdens the heart of man,<br />
+                            oil to make his face shine,<br />
+                            and bread that sustains his heart. (Psalm 104:14-15)
+                          </p>
                         </div>
 
 

@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import logo from '../assets/img/Logo.svg';
-import HistoryPDF from '../assets/History of ACC.pdf'
 
 class Navigation extends Component {
   render() {
@@ -10,7 +9,7 @@ class Navigation extends Component {
         <div className="container">
           <div className="row">
 
-            <div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
+            <div id="logo-region" className="logo col-xs-12 col-md-2 text-center-sm">
               <a href="/"><img src={logo} alt="Home" className="logo" /></a>
             </div> {/* /logo-region */}
 
@@ -87,13 +86,13 @@ class Navigation extends Component {
                                           <a href="javascript:void(0);" ></a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Team" >Our Vision</a>
+                                          <a href="/Vision" >Our Vision</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Vision" >Our Team</a>
+                                          <a href="/Team" >Our Team</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href={HistoryPDF} target="_blank" >Our History</a>
+                                          <a href="/OurHistory" target="_blank" >Our History</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -143,7 +142,7 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/ChildrensChurch" >Childrens Church</a>
+                                          <a href="/ChildrensChurch" >Children's Church</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/PraiseTeam" >Praise Team</a>

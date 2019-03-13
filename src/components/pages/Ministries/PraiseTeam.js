@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import PraiseTeamImg from '../../../assets/img/PraiseTeam.jpg';
 
 class PraiseTeam extends Component {
   render() {
@@ -36,7 +37,27 @@ class PraiseTeam extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          Sorry this page is still under construction.
+                          <h4 className="ministry-text">The music team of ACC is small but dedicated. Led by Jeetha, our primary aim is to support and enhance the congregational singing on Sunday mornings. However, there are other ways we seek to serve – for example, with other local churches, we sing Christmas carols at Armadale Hospital each year in December.</h4>
+                          <br />
+                          <img src={PraiseTeamImg} alt="" className="img img-responsive ministryImg image-center" />
+                          <br />
+                          <p className="subtext">
+                            Praise the LORD. <br />
+                            Praise God in his sanctuary; <br />
+                            praise him in his mighty heavens.<br />
+                            Praise him for his acts of power; <br />
+                            praise him for his surpassing greatness.<br />
+                            Praise him with the sounding of the trumpet, <br />
+                            praise him with the harp and lyre,<br />
+                            praise him with tambourine and dancing, <br />
+                            praise him with the strings and flute,<br />
+                            praise him with the clash of cymbals, <br />
+                            praise him with resounding cymbals.<br />
+                            Let everything that has breath praise the LORD. <br />
+                            Praise the LORD.<br />
+                            (Psalm 150)
+  
+                          </p>
                         </div>
 
 

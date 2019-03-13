@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import PastoralCareImg from '../../../assets/img/PastoralCare.jpg';
 
 class PastoralCare extends Component {
   render() {
@@ -36,7 +37,13 @@ class PastoralCare extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          Sorry this page is still under construction.
+                          <h4>If you or someone you know would appreciate a visit, do contact us by phone or at <a href="mailto:pastor@armadalechurch.com">pastor@armadalechurch.com</a> (currently unavailable). You don’t need to be a regular attender of our church, and we are happy to simply chat over the phone, catch up over coffee at a café, visit in hospital, or meet more formally. If you would like professional counselling, we can also direct you to someone we recommend.</h4>
+                          <br />
+                          <img src={PastoralCareImg} alt="" className="img img-responsive image-center" /><br />
+
+                          <p className="subtext text-center">
+                            Rejoice with those who rejoice; mourn with those who mourn. (Romans 12:15)
+                          </p>
                         </div>
 
 

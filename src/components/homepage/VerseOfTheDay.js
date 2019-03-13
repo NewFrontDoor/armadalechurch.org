@@ -44,7 +44,7 @@ class VerseOfTheDay extends Component {
                 <div className="col-md-4 col-xs-12">
                     <div className="region region-content-2-2">
                         <div className="block block-block">
-                            <h2 >Verse of the Day</h2>
+                            <h2 className="header-custom-color">Verse of the Day</h2>
                             <div className="content">
                                 {votd}
                             </div>
