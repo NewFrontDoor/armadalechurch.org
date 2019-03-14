@@ -54,6 +54,7 @@
   @media (min-width: 600px) {
   .logo{
     max-height: 170px;
+    height: 130px;
   }
   }
 
@@ -70,16 +71,17 @@
       color: #fff !important;
   }
 
-
+.navbar-header{
+  text-align: center;
+  width:100%;
+}
 @media (min-width:768px) and (max-width:979px){
-  .nestor-main-menu .navbar-toggle{
-    display: inline;
+  .navbar-toggle{
+    display: inline-block;
     width: 250px;
     border-radius: 0;
     padding: 12px;
-    float: none;
-    margin: 0 0 30px;
-    
+    float: none;   
   }
   .nav-collapse{
     margin-top: -55px !important;

@@ -1,23 +1,23 @@
 (function ($) {
   "use strict;"
-  
-  $(document).ready(function() {
+
+  $(document).ready(function () {
     var nestor_base_url = Drupal.settings['settings']['nestor_base_url'];
-    
-    $(".switcher .link").click(function() {
+
+    $(".switcher .link").click(function () {
 
       if ($(".switcher .themeOptions").css("display") === "none") {
-        $(".switcher .themeOptions").css("display", "block"); 
-        $(".switcher .title").css("display", "block"); 
+        $(".switcher .themeOptions").css("display", "block");
+        $(".switcher .title").css("display", "block");
       } else {
         $(".switcher .themeOptions").css("display", "none");
         $(".switcher .title").css("display", "none");
       }
-      
+
     })
-    
+
     // Theme color
-    $('.themeColors li a').click(function() {
+    $('.themeColors li a').click(function () {
       var themeColor = $(this).attr('class');
 
       $('#themeColor').remove();
@@ -25,8 +25,8 @@
     });
 
     // Theme layout
-    $('.themeLayout').change(function() {
-      if($(this).val() == "boxed") {
+    $('.themeLayout').change(function () {
+      if ($(this).val() == "boxed") {
         $('.main-wrapper').addClass('boxed');
         $('body').addClass('bg-pattern-cross_scratches');
       }
@@ -36,7 +36,7 @@
     });
 
     // Header
-    $('.header-style').change(function() {
+    $('.header-style').change(function () {
       if ($(this).val() == "header-1") {
         $('header').removeClass('header-2');
         $('header').addClass('header-1');
@@ -54,9 +54,9 @@
         $('#menu-region').removeClass('col-md-9');
         $('.nestor-main-menu > .navbar-collapse > ul').removeClass('navbar-right');
       } else {
-        $.getScript( "/sites/all/themes/nestor/js/waypoints.min.js");
-        $.getScript( "/sites/all/themes/nestor/js/waypoints-sticky.min.js").done(function() {
-         $('header').waypoint('sticky', {
+        $.getScript("/sites/all/themes/nestor/js/waypoints.min.js");
+        $.getScript("/sites/all/themes/nestor/js/waypoints-sticky.min.js").done(function () {
+          $('header').waypoint('sticky', {
             offset: "-25px"
           });
         });
@@ -64,7 +64,7 @@
     });
 
     // Footer
-    $('.footer-style').change(function() {
+    $('.footer-style').change(function () {
       if ($(this).val() == "footer-1") {
         $('.footer-columns').removeClass('bg-color-grayLight1');
         $('.footer-columns').addClass('bg-color-grayDark2');
@@ -77,12 +77,12 @@
     });
 
     // BG Patterns
-    $('.themePatterns li a').click(function() {
+    $('.themePatterns li a').click(function () {
       var bgPattern = $(this).css("background");
 
       $('body').css('background', bgPattern);
     });
-    
+
   });
 
 })(jQuery);

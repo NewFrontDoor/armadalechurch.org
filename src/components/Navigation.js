@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import logo from '../assets/img/Logo.svg';
+import logo from '../assets/img/logo.svg';
 
 class Navigation extends Component {
   render() {
@@ -9,7 +9,7 @@ class Navigation extends Component {
         <div className="container">
           <div className="row">
 
-            <div id="logo-region" className="logo col-xs-12 col-md-2 text-center-sm">
+            <div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
               <a href="/"><img src={logo} alt="Home" className="logo" /></a>
             </div> {/* /logo-region */}
 
@@ -24,7 +24,7 @@ class Navigation extends Component {
                     <nav className="navbar nestor-main-menu" role="navigation">
                       {/* Menu button for mobile display */}
                       <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">MENU</button>
+                        <button type="button" className="navbar-toggle text-center" data-toggle="collapse" data-target=".nav-collapse">MENU</button>
                       </div>
                     </nav>
                   </div>
