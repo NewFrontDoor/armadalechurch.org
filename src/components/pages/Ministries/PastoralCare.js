@@ -37,7 +37,7 @@ class PastoralCare extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          <h4>If you or someone you know would appreciate a visit, do contact us by phone or at <a href="mailto:pastor@armadalechurch.com">pastor@armadalechurch.com</a> (currently unavailable). You don’t need to be a regular attender of our church, and we are happy to simply chat over the phone, catch up over coffee at a café, visit in hospital, or meet more formally. If you would like professional counselling, we can also direct you to someone we recommend.</h4>
+                          <h4 class="ministry-text">If you or someone you know would appreciate a visit, do contact us by phone or at <a href="mailto:pastor@armadalechurch.com">pastor@armadalechurch.com</a> (currently unavailable). You don’t need to be a regular attender of our church, and we are happy to simply chat over the phone, catch up over coffee at a café, visit in hospital, or meet more formally. If you would like professional counselling, we can also direct you to someone we recommend.</h4>
                           <br />
                           <img src={PastoralCareImg} alt="" className="img img-responsive image-center" /><br />
 
