@@ -61,7 +61,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
           <Route exact path="/MensBreakfast" component={MensBreakfast} />
           <Route exact path="/WomensMinistry" component={WomensMinistry} />
-          <Route exact path="/Brigades" component={BoysGirlsBrigades} />
+          <Route exact path="/BoysBrigades" component={BoysGirlsBrigades} />
           <Route exact path="/Helps" component={Helps} />
           <Route exact path="/Bread" component={BreadMinistry} />
 

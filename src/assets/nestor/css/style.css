@@ -3130,7 +3130,8 @@ label {
 .tb-megamenu .nav > .active a, .tb-megamenu .nav > .active a:hover, .tb-megamenu .nav > .active a:focus { background-color: white; }
 .tb-megamenu .dropdown-menu .active > a, .tb-megamenu .dropdown-menu .active > a:hover { background-color: white; color: #00003e; background-image: none; }
 .tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus, .tb-megamenu .dropdown-submenu:hover > a {
-  color: #00003e;
+  color: #fff;
+  background-color: #0d113b;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background-color: #fff; border-color: #00003e; }
 

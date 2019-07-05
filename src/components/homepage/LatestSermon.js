@@ -17,15 +17,15 @@ class LatestSermon extends Component {
   componentWillMount() {
     var that = this;
 
-    /*getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
+    getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
       that.setState({ latestSermon: data });
-    });*/
+    });
 
   }
   render() {
 
     if (!this.state.latestSermon) {
-      //var sermonDetails = <div>Loading, please wait.</div>
+      //var sermonDetails = <i className="fa fa-spinner"></i>
       var sermonDetails = <div>Currently Unavailable.</div>
     }
     else {

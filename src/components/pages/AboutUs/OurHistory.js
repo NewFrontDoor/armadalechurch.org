@@ -38,16 +38,16 @@ class OurHistory extends Component {
                                                 <div className="content">
 
                                                     <img className="historyImg" src={HistoryImg} alt="" align="right"></img><br className="sm-br" /><br className="sm-br" />
-                                                    <p>
+                                                    <p className="ministry-text">
                                                         The first Congregational service in the area was conducted in 1890 by the Rev Joseph Serls, who made the 20-mile journey from Claremont by horse and cart. On the 17th of February 1900, Armadale Congregational Church was formed, with the help of Rev George Herrington. A church building was constructed on Third Rd in 1903 (right), followed by a manse on the adjoining Church Av in 1907. The manse building is still in position, now as the restaurant “The Manse”.
                                                     </p>
-                                                    <p>
+                                                    <p className="ministry-text">
                                                         In 1959 the a new church hall was opened, and the old church was relocated to where it now resides in Minawarra Park. Our current Forrest Rd premises, once a drive-in theatre, was purchased in 1984, a year after our school, Dale Christian School, commenced.
                                                     </p>
-                                                    <p>
+                                                    <p className="ministry-text">
                                                         In 1977, the Methodist, Congregational, and Presbyterian Churches joined to become the Uniting Church. However, some churches decided not to join. This is why ‘Congregational’ churches are few today, although there are a number scattered around the country, and notably still exist as the Congregational denomination in NSW. However, as is evident in our founding documents, our church has always been committed to working with all faithful Christians everywhere, regardless of denominational lines.
                                                     </p>
-                                                    <p>
+                                                    <p className="ministry-text">
                                                         More information about our history, including its spiritual life and the people of the church, can be found here: <a href={HistoryPDF} target="_blank">Armadale Congregational Church: The First 100 Years</a>.
                                                     </p>
                                                     <br />

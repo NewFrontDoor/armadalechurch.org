@@ -37,7 +37,7 @@ class MensBreakfast extends Component {
                         <div className="content">
 
                           <h4 className="ministry-text">
-                            Men get together for a manly(!) cooked breakfast each month on the verandah of one of our men’s homes. This is a great chance to get to know other men in an informal setting (and it’s free!). Contact <a href="mailto:info@armadalechurch.com">info@armadalechurch.com</a> (currently unavailable) for details.
+                            Men get together for a manly(!) cooked breakfast each month on the verandah of one of our men’s homes. This is a great chance to get to know other men in an informal setting (and it’s free!). Contact <a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a> (currently unavailable) for details.
                           </h4>
                           <br />
                           <img src={MensBreakfastImg} alt="" className="ministryImg img img-responsive image-center" /><br />

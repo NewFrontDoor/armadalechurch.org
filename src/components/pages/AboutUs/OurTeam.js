@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import ForrestImg from '../../../assets/img/ForrestandJeetha.jpg';
 import BobImg from '../../../assets/img/BobandJoan.jpg';
-import MoiraImg from '../../../assets/img/MoiraandDavid.jpg';
 
 class OurTeam extends Component {
     render() {
@@ -56,11 +55,6 @@ class OurTeam extends Component {
                                                             Joan was a registered nurse, and now coordinates the science laboratory at Dale Christian School. Bob and Joan live ‘out bush’ in Wungong, and enjoy catching up with their many adult children.
                                                         </p>
                                                         <br />
-
-                                                        <img className="img img-responsive image-center" src={MoiraImg} alt="" /><br />
-                                                        <p className="our-team-text">
-                                                            Moira Dunstall leads the children’s ministry, and loves hearing the challenging questions that kids ask. Moira enjoys spending time with her two dogs and one grandchild. Her husband David heads up the bread ministry, and is great at fixing stuff!
-                                                    </p>
                                                     </div>
 
 

@@ -38,7 +38,7 @@ class WomensMinistry extends Component {
                         <div className="content">
 
                           <h4 className="ministry-text">
-                            Various special events are organised throughout the year for women to get together and be encouraged. These include women's breakfasts, Valentine's Day morning tea, and guest speaker events. All women are welcome – young, old, single, or married. Contact <a href="mailto:info@armadalechurch.com">info@armadalechurch.com</a> (currently unavailable) for details.
+                            Various special events are organised throughout the year for women to get together and be encouraged. These include women's breakfasts, Valentine's Day morning tea, and guest speaker events. All women are welcome – young, old, single, or married. Contact <a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a> (currently unavailable) for details.
                           </h4>
                           <br />
                           <img src={WomensMinistryImg} alt="" className="img img-responsive image-center" />

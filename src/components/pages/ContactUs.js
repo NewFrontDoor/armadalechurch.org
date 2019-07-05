@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import validator from 'validator';
 
-//import { postToWebform } from '../../utils/postToAPI';
+import { postToWebform } from '../../utils/postToAPI';
 
 class ContactUs extends Component {
   constructor() {
@@ -25,7 +25,6 @@ class ContactUs extends Component {
     var change = {};
     change[e.target.name] = value;
     this.setState(change);
-    //console.log(this.state)
   }
 
   handleSubmit(e) {
@@ -46,21 +45,20 @@ class ContactUs extends Component {
     }
     else {
       this.setState({ formValid: true });
-      console.log(this.state);
       /*handle posting to drupal and show success message*/
       //strip 4byte utf8 characters / emojis with .replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, '')
       var form = new FormData();
-      form.append("webform", "drupal-webform-uuid");
+      form.append("webform", "38b535d9-2ab9-4bcd-b767-64a833d7a2dd");
       form.append("submission[data][1][values][0]", this.state.name.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][2][values][0]", this.state.email.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][3][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][4][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      /*
+      form.append("submission[data][3][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+      form.append("submission[data][4][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+
       var that = this;
       postToWebform(form, function (data) {
         that.setState({ submissionID: data.sid })
         that.setState({ formSubmitted: true })
-      })*/
+      })
     }
 
   }
@@ -130,22 +128,22 @@ class ContactUs extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12 col-md-8 col-md-offset-2">
 
-                <div id="block-block-54" class="block block-block">
+                <div id="block-block-54" className="block block-block">
 
 
-                  <div class="content">
+                  <div className="content">
                     If you have any questions about Armadale Congregational Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
                 </div>
 
 
-                <div id="block-block-45" class="block block-block">
+                <div id="block-block-45" className="block block-block">
 
 
-                  <div class="content">
-                    <div class="contacts">
-                      <div class="row">
+                  <div className="content">
+                    <div className="contacts">
+                      <div className="row">
 
-                        <div class="col-xs-12 col-sm-6">
+                        <div className="col-xs-12 col-sm-6">
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 9:30am:</p>
                           <p>Armadale Congregational Church<br />
@@ -153,10 +151,10 @@ class ContactUs extends Component {
                             Armadale WA 6112</p>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 margin-top-xs-40">
+                        <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/ArmadaleCong/" target="_blank" rel="noreferrer noopener">/ArmadaleCong</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:">Coming soon</a></p>
+                            <b>Email:</b>&nbsp;<a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a></p>
                         </div>
 
                       </div>

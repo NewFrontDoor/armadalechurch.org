@@ -37,7 +37,7 @@ class Helps extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                          <h4 className="ministry-text">“Helps” is a catch-all term for assisting those in need. Casseroles for the sick, giving people lifts, running errands while someone has a leg cast, gifts for new parents, gardening for the elderly... If this is the kind of thing you would love to get involved with locally, email <a href="mailto:info@armadalechurch.com">info@armadalechurch.com</a> (currently unavailable).</h4>
+                          <h4 className="ministry-text">“Helps” is a catch-all term for assisting those in need. Casseroles for the sick, giving people lifts, running errands while someone has a leg cast, gifts for new parents, gardening for the elderly... If this is the kind of thing you would love to get involved with locally, email <a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a> (currently unavailable).</h4>
                           <br />
                           <img src={HelpsImg} alt="" className="img img-responsive image-center" /><br />
                           <p className="subtext">

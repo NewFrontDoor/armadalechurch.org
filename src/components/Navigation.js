@@ -183,7 +183,7 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Brigades" >Boys & Girls Brigades</a>
+                                          <a href="/BoysBrigades" >Boy's Brigades</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Helps" >Helps</a>

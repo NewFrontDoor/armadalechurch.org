@@ -23,7 +23,7 @@ class VerseOfTheDay extends Component {
             votd =
                 (<div>
                     {/*{decode(this.state.votd.text)} - <a href={decode(this.state.votd.permalink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.reference)}</a>  <a href={decode(this.state.votd.copyrightlink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.copyright)}</a>*/}
-                    {decode(this.state.votd.text)} <br />
+                    <p style={{ fontSize: "18px", textAlign: "justify" }}>{decode(this.state.votd.text)}</p> <br />
                     <a href={decode(this.state.votd.permalink)} target="_blank" rel="noreferrer noopener">{decode(this.state.votd.reference)}</a><br />
 
 

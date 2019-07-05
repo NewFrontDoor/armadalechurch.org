@@ -119,6 +119,10 @@
     border-color: #00003e;
     color: #00003e;
   }
+  
+  .form-control:focus{
+    border-color: #00003e;
+  }
 
 #votd{
   padding-top: 60px;
@@ -137,10 +141,11 @@ body{
 .subtext{
   font-size: 16px;
   font-style: italic;
+  text-align: justify;
 }
 
 .historyImg{
-  margin: 10px;
+  margin-left: 15px;
   width: 60%;
   float: right;
   max-width: 600px;
@@ -166,14 +171,21 @@ body{
 
 .our-team-text{
   padding: 10px;
-}
-
-h4.ministry-text{
   font-family: 'Lato' !important;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;  
   line-height: 26px;
+  text-align: justify;
+}
+
+.ministry-text{
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;  
+  line-height: 26px;
+  text-align: justify;
 }
 
 

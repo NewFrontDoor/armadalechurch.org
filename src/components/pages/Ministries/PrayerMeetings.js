@@ -42,7 +42,7 @@ class PrayerMeetings extends Component {
                           </h4>
 
                           <h4 className="ministry-text">
-                            If you would like prayer – either public or private - please email <a href="mailto:pastor@armadalechurch.com">pastor@armadalechurch.com</a> (currently unavailable).
+                            If you would like prayer – either public or private - please email <a href="mailto:pastor@armadalechurch.org">pastor@armadalechurch.org</a> (currently unavailable).
                           </h4>
                           <br />
                           <img src={PrayerMeetingsImg} alt="" className="ministryImg img img-responsive image-center" />

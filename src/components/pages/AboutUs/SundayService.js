@@ -45,12 +45,12 @@ class SundayService extends Component {
                                                         <img src={churchImg} alt="" className="img img-responsive" /><br />
 
                                                         <h3 className="text-center header-custom-color">What should I expect?</h3>
-                                                        <p>
+                                                        <p className="ministry-text">
                                                             Here’s a few common questions people ask about our service –<br /><br />
-                                                            <strong>How long is the service?</strong><br />
+                                                            <strong className="header-custom-color">How long is the service?</strong><br />
                                                             Our service is generally from 9:30am – 11:00am, followed by informal fellowship over morning tea.<br /><br />
 
-                                                            <strong>What is your style of service/worship?</strong><br />
+                                                            <strong className="header-custom-color">What is your style of service/worship?</strong><br />
                                                             We’re a relaxed and passionate community who strive for authenticity and intelligibility in services. <br />
                                                             It’s OK if children make noise, and you’re welcome to come and go as you need to.<br /><br />
 
@@ -59,20 +59,20 @@ class SundayService extends Component {
 
                                                             If you are new, it won’t be weird for you to just sit and observe what church is about.<br /><br />
 
-                                                            <strong>What about communion?</strong><br />
+                                                            <strong className="header-custom-color">What about communion?</strong><br />
                                                             We celebrate communion monthly, and you are welcome to join us in celebrating the death and resurrection of the Lord Jesus.
                                                             To be as inclusive as possible, we use non-alcoholic grape juice – but water is also available.<br /><br />
 
-                                                            <strong>What should I wear?</strong><br />
+                                                            <strong className="header-custom-color">What should I wear?</strong><br />
                                                             There’s no “dress code” – wear something comfortable and modest. You might have an older gentleman on your right who feels comfortable in a suit and tie, while on your right a young person may be wearing shorts and a T-shirt.
                                                             God sees our heart!<br /><br />
 
-                                                            <strong>Will my children be catered for?</strong><br />
+                                                            <strong className="header-custom-color">Will my children be catered for?</strong><br />
                                                             Yes. We have a Parent’s Room at the back of the church (with toys and books) which allows parents to take young children who may be very noisy, while still participating by hearing the service through speakers and observing through the large window.
                                                             <br /><br />
                                                             Before the main talk, children aged 3-12 go out for a children’s program (but they are also welcome to stay in the main service if they prefer).<br /><br />
 
-                                                            <strong>Please contact us by phone or email if you have any other questions!</strong>
+                                                            <strong className="header-custom-color">Please contact us by phone or email if you have any other questions!</strong>
                                                         </p>
                                                         <br />
                                                         <p className="subtext">

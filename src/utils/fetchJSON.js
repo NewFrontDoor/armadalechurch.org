@@ -43,7 +43,6 @@ export function getVerseOfTheDay(url, callback) {
     .then(resp => resp.json())
     .then(function (data) {
       callback(data.votd);
-      console.log(data.votd)
     })
     .catch(function (error) {
       console.log(error);

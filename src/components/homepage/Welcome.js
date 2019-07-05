@@ -23,8 +23,8 @@ class Welcome extends Component {
                         <div className="content">
                           <div className="field field-name-body field-type-text-with-summary field-label-hidden"><div className="field-items">
                             <div className="field-item even">
-                              <p>Welcome! I'm glad you've found us. Armadale Congregational Church is a Christian Church in Armadale, Western Australia, who believes in Jesus and the difference that he makes. I hope this website is useful for you - jump on the phone, flick us an email, or message us on Facebook if you have any questions. One of the best ways to check things out is to join us for one of our weekly Sunday morning services at 9:30am. If you're a Christian looking for a local church, it would be great if you found a home among us. But whether you're convinced or simply curious about Christianity, we'd love for you to connect with us.</p>
-                              <p>Pastor Forrest</p>
+                              <p className="ministry-text">Welcome! I'm glad you've found us. Armadale Congregational Church is a Christian Church in Armadale, Western Australia, who believes in Jesus and the difference that he makes. I hope this website is useful for you - jump on the phone, flick us an email, or message us on Facebook if you have any questions. One of the best ways to check things out is to join us for one of our weekly Sunday morning services at 9:30am. If you're a Christian looking for a local church, it would be great if you found a home among us. But whether you're convinced or simply curious about Christianity, we'd love for you to connect with us.</p>
+                              <p className="ministry-text">Pastor Forrest</p>
                             </div>
 
                             {/*<VOTD />*/}
