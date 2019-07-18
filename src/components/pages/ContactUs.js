@@ -67,7 +67,6 @@ class ContactUs extends Component {
 
     var contactForm = (
       <section>
-        <em>The below form is currently just a placeholder</em>
         <div id="block-block-54" className="block block-block">
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
