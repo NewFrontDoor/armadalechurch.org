@@ -14,7 +14,7 @@ import OurPeople from './pages/OurPeople';
 import Events from './pages/Events';
 
 import ContactUs from './pages/ContactUs';
-import WhatWeBelieve from './pages/WhatWeBelieve';
+import WhatWeBelieve from './pages/AboutUs/WhatWeBelieve';
 import SundayService from './pages/AboutUs/SundayService';
 
 

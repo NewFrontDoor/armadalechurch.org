@@ -188,5 +188,22 @@ body{
   text-align: justify;
 }
 
+header{
+  background-color: #0d113b;
+}
 
+.tb-megamenu .nav > li > a{
+  color: #fff;
+}
 
+/*Search styling*/
+input[type=text].search-bar{
+  width: 90%;
+  height: 40px;
+  padding: 10px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

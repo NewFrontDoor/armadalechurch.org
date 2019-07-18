@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { getPageFromDrupal } from '../../../utils/fetchJSON';
 
-class SundayService extends Component {
+class WhatWeBelieve extends Component {
     constructor() {
         super();
         this.state = {
@@ -16,7 +16,7 @@ class SundayService extends Component {
 
     componentWillMount() {
         var that = this;
-        getPageFromDrupal('SundayService', function (data) {
+        getPageFromDrupal('WhatWeBelieve', function (data) {
             that.setState({ page: data[0] });
         });
     }
@@ -78,4 +78,4 @@ class SundayService extends Component {
     }
 }
 
-export default SundayService;
+export default WhatWeBelieve;

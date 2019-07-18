@@ -5,6 +5,7 @@ import fetch from 'isomorphic-fetch';
 const DRUPAL_URL = "https://api.armadalechurch.org/api/views/";
 const DRUPAL_SEARCH_SERMONS = DRUPAL_URL + "all_sermons_api?display_id=services_1&filters";
 const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+const DRUPAL_GET_PAGE = DRUPAL_URL + "react_page_api?display_id=services_1&filters[page_title]=";
 
 //Example suffix: all_sermons_api?filters[preacher]=keith&filters[title]=reality
 
@@ -43,6 +44,17 @@ export function getVerseOfTheDay(url, callback) {
     .then(resp => resp.json())
     .then(function (data) {
       callback(data.votd);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+}
+
+export function getPageFromDrupal(page, callback) {
+  fetch(DRUPAL_GET_PAGE + page)
+    .then(resp => resp.json())
+    .then(function (data) {
+      callback(data);
     })
     .catch(function (error) {
       console.log(error);
