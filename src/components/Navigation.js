@@ -218,6 +218,7 @@ class Navigation extends Component {
                             <a href="/ContactUs" title="Contact Us">Contact Us</a>
                           </li>
 
+                          {/*WIP Search bar
                           <li className="tb-megamenu-item level-1 mega dropdown">
                             <a href="javascript:void(0);" className="dropdown-toggle" title="Visit Us">
 
@@ -256,7 +257,7 @@ class Navigation extends Component {
                               </div>
                             </div>
                           </li>
-
+                          */}
                         </ul>
                       </div>
                     </div>
