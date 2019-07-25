@@ -1,8 +1,25 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import WomensMinistryImg from '../../../assets/img/WomensMinistry.jpg';
+import _ from 'lodash';
+import { getPageFromDrupal } from '../../../utils/fetchJSON';
 
 class WomensMinistry extends Component {
+  constructor() {
+    super();
+    this.state = {
+      page: null,
+      breadcrumbs: `<a href="/">Home</a>
+          <span className="delimiter">›</span>
+          <span title="" className="nolink">Ministries</span>`
+    }
+  }
+
+  componentWillMount() {
+    var that = this;
+    getPageFromDrupal('WomensMinistry', function (data) {
+      that.setState({ page: data[0] });
+    });
+  }
   render() {
     return (
       <section>
@@ -11,16 +28,16 @@ class WomensMinistry extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Women's Ministry</h1>
+                  <h1>
+                    {this.state.page ? <span dangerouslySetInnerHTML={{ __html: this.state.page.title }} /> : ""}
+                  </h1>
                 </div>
               </div>
 
               <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
-                    <a href="/">Home</a>
-                    <span className="delimiter">›</span>
-                    <span title="" className="nolink">Ministries</span>
+                    {this.state.breadcrumbs ? <section dangerouslySetInnerHTML={{ __html: this.state.breadcrumbs }} /> : ""}
                   </div>
                 </div>
               </div>
@@ -36,19 +53,7 @@ class WomensMinistry extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-
-                          <h4 className="ministry-text">
-                            Various special events are organised throughout the year for women to get together and be encouraged. These include women's breakfasts, Valentine's Day morning tea, and guest speaker events. All women are welcome – young, old, single, or married. Contact <a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a> (currently unavailable) for details.
-                          </h4>
-                          <br />
-                          <img src={WomensMinistryImg} alt="" className="img img-responsive image-center" />
-                          <br />
-                          <p className="subtext">
-                            Charm is deceptive, and beauty is fleeting;<br />
-                            but a woman who fears the LORD is to be praised. <br />
-                            (Proverbs 31:30)
-                          </p>
-
+                          {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
                         </div>
 
 

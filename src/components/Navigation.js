@@ -3,6 +3,25 @@ import React, { Component } from 'react';
 import logo from '../assets/img/Logo.svg';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchQuery: ''
+    }
+  }
+
+  handleChange(e) {
+    let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+
+    var change = {};
+    change[e.target.name] = value;
+    this.setState(change);
+  }
+
+  handleSearchSubmit(e) {
+    e.preventDefault();
+    window.location.href = `/search/${this.state.searchQuery}`;
+  }
   render() {
     return (
       <header className="header-1 region-0 block-0">
@@ -218,11 +237,10 @@ class Navigation extends Component {
                             <a href="/ContactUs" title="Contact Us">Contact Us</a>
                           </li>
 
-                          {/*WIP Search bar
                           <li className="tb-megamenu-item level-1 mega dropdown">
-                            <a href="javascript:void(0);" className="dropdown-toggle" title="Visit Us">
+                            <a href="javascript:void(0);" className="dropdown-toggle" title="Search">
 
-                            <i className="ionicons ion-android-search"></i> Search         <span className="caret"></span>
+                              <i className="ionicons ion-android-search"></i> Search         <span className="caret"></span>
                             </a>
                             <div style={{ width: "750px" }} className="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
                               <div className="mega-dropdown-inner">
@@ -246,18 +264,19 @@ class Navigation extends Component {
                                     <div className="tb-megamenu-column-inner mega-inner clearfix">
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
-                                        <input type="text" className="search-bar"/>
+                                        <form onSubmit={this.handleSearchSubmit.bind(this)}>
+                                          <input type="text" name="searchQuery" className="nav-search-bar search-bar" value={this.state.searchQuery || ''} onChange={this.handleChange.bind(this)} placeholder="" />
+                                        </form>
 
                                       </ul>
                                     </div>
                                   </div>
 
-                                
+
                                 </div>
                               </div>
                             </div>
                           </li>
-                          */}
                         </ul>
                       </div>
                     </div>

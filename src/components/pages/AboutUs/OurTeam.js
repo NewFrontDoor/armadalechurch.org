@@ -16,7 +16,7 @@ class OurTeam extends Component {
 
     componentWillMount() {
         var that = this;
-        getPageFromDrupal('OurTeam', function (data) {
+        getPageFromDrupal('Team', function (data) {
             that.setState({ page: data[0] });
         });
     }

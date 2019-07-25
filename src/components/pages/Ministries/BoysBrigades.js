@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { getPageFromDrupal } from '../../../utils/fetchJSON';
+import HTML5Video from '../../models/HTML5Video'
 
-class MensBreakfast extends Component {
+class BoysBrigades extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,7 +17,7 @@ class MensBreakfast extends Component {
 
   componentWillMount() {
     var that = this;
-    getPageFromDrupal('MensBreakfast', function (data) {
+    getPageFromDrupal('BoysBrigades', function (data) {
       that.setState({ page: data[0] });
     });
   }
@@ -54,6 +55,9 @@ class MensBreakfast extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
                           {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
+                          <div className="row col-xs-12 padding-top-30">
+                            <HTML5Video src="https://api.armadalechurch.org/sites/api.armadalechurch.org/files/beingbold-encoded.mp4" type="video/mp4" />
+                          </div>
                         </div>
 
 
@@ -78,4 +82,4 @@ class MensBreakfast extends Component {
   }
 }
 
-export default MensBreakfast;
+export default BoysBrigades;

@@ -1,7 +1,25 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import _ from 'lodash';
+import { getPageFromDrupal } from '../../../utils/fetchJSON';
 
 class BreadMinistry extends Component {
+  constructor() {
+    super();
+    this.state = {
+      page: null,
+      breadcrumbs: `<a href="/">Home</a>
+          <span className="delimiter">›</span>
+          <span title="" className="nolink">Ministries</span>`
+    }
+  }
+
+  componentWillMount() {
+    var that = this;
+    getPageFromDrupal('Bread', function (data) {
+      that.setState({ page: data[0] });
+    });
+  }
   render() {
     return (
       <section>
@@ -10,16 +28,16 @@ class BreadMinistry extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Bread Ministry</h1>
+                  <h1>
+                    {this.state.page ? <span dangerouslySetInnerHTML={{ __html: this.state.page.title }} /> : ""}
+                  </h1>
                 </div>
               </div>
 
               <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
-                    <a href="/">Home</a>
-                    <span className="delimiter">›</span>
-                    <span title="" className="nolink">Ministries</span>
+                    {this.state.breadcrumbs ? <section dangerouslySetInnerHTML={{ __html: this.state.breadcrumbs }} /> : ""}
                   </div>
                 </div>
               </div>
@@ -35,9 +53,7 @@ class BreadMinistry extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <h4 className="ministry-text">David heads up the Bread Ministry, which collects and makes available day-old bread from local bakeries. Not only does this prevent the bread from going to waste, but it’s a great practical way of assisting people and charitable groups with high-quality food. We currently collect bread on Thursdays and Saturdays. If you would like information on how to help with this initiative, or how to collect free bread yourself, email <a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a> (currently unavailable).</h4>
-                          <br />
-                          <p className="subtext">“I am the bread of life. Your forefathers ate the manna in the desert, yet they died. But here is the bread that comes down from heaven, which a man may eat and not die. I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. This bread is my flesh, which I will give for the life of the world." (Jesus, John 6:48-51)</p>
+                          {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
                         </div>
 
 
@@ -46,6 +62,9 @@ class BreadMinistry extends Component {
                     </div>
                   </div>
                 </div>
+
+
+
               </div>
 
 

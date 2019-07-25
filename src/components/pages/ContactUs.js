@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-
+import { getPageFromDrupal } from '../../utils/fetchJSON';
 import validator from 'validator';
 
 import { postToWebform } from '../../utils/postToAPI';
@@ -13,10 +13,19 @@ class ContactUs extends Component {
       email: "",
       subject: "",
       message: "",
-      formErrorMessage: ""
+      formErrorMessage: "",
+      page: null,
+      breadcrumbs: `<a href="/">Home</a>`
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentWillMount() {
+    var that = this;
+    getPageFromDrupal('ContactUs', function (data) {
+      that.setState({ page: data[0] });
+    });
   }
 
   handleChange(e) {
@@ -67,27 +76,25 @@ class ContactUs extends Component {
 
     var contactForm = (
       <section>
-        <div id="block-block-54" className="block block-block">
-          <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
-            <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
-            <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
-          </div>
-            <div className="form-item form-group form-type-textfield form-item-mail">
-              <label htmlFor="edit-mail">Your e-mail address <span className="form-required" title="This field is required.">*</span></label>
-              <input className="form-control form-text required" type="text" id="edit-mail" name="email" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.email} />
-            </div>
-            <div className="form-item form-group form-type-textfield form-item-mail">
-              <label htmlFor="edit-subject">Subject</label>
-              <input className="form-control form-text required" type="text" id="edit-subject" name="subject" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.subject} />
-            </div>
-            <div className="form-item form-group form-type-textarea form-item-message">
-              <label htmlFor="edit-message">Message</label>
-              <div className="form-textarea-wrapper"><textarea className="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5" onChange={this.handleChange.bind(this)} value={this.state.address}></textarea></div>
-            </div>
-
-            <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit" value="Send message" /></div></div>
-          </form>
+        <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
+          <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
+          <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
         </div>
+          <div className="form-item form-group form-type-textfield form-item-mail">
+            <label htmlFor="edit-mail">Your e-mail address <span className="form-required" title="This field is required.">*</span></label>
+            <input className="form-control form-text required" type="text" id="edit-mail" name="email" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.email} />
+          </div>
+          <div className="form-item form-group form-type-textfield form-item-mail">
+            <label htmlFor="edit-subject">Subject</label>
+            <input className="form-control form-text required" type="text" id="edit-subject" name="subject" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.subject} />
+          </div>
+          <div className="form-item form-group form-type-textarea form-item-message">
+            <label htmlFor="edit-message">Message</label>
+            <div className="form-textarea-wrapper"><textarea className="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5" onChange={this.handleChange.bind(this)} value={this.state.address}></textarea></div>
+          </div>
+
+          <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit" value="Send message" /></div></div>
+        </form>
         <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
       </section>
     );
@@ -107,14 +114,14 @@ class ContactUs extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Contact Us</h1>
+                  {this.state.page ? <span dangerouslySetInnerHTML={{ __html: this.state.page.title }} /> : ""}
                 </div>
               </div>
 
               <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
-                    <a href="/">Home</a>
+                    {this.state.breadcrumbs ? <section dangerouslySetInnerHTML={{ __html: this.state.breadcrumbs }} /> : ""}
                   </div>
                 </div>
               </div>
@@ -130,35 +137,7 @@ class ContactUs extends Component {
                 <div id="block-block-54" className="block block-block">
 
 
-                  <div className="content">
-                    If you have any questions about Armadale Congregational Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
-                </div>
-
-
-                <div id="block-block-45" className="block block-block">
-
-
-                  <div className="content">
-                    <div className="contacts">
-                      <div className="row">
-
-                        <div className="col-xs-12 col-sm-6">
-                          <h5>Address</h5>
-                          <p>Come visit us on Sundays @ 9:30am:</p>
-                          <p>Armadale Congregational Church<br />
-                            150 Forrest Rd<br />
-                            Armadale WA 6112</p>
-                        </div>
-
-                        <div className="col-xs-12 col-sm-6 margin-top-xs-40">
-                          <h5>Contact Us</h5>
-                          <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/ArmadaleCong/" target="_blank" rel="noreferrer noopener">/ArmadaleCong</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:info@armadalechurch.org">info@armadalechurch.org</a></p>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
+                  {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
                 </div>
 
 

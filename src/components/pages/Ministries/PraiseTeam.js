@@ -1,8 +1,25 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import PraiseTeamImg from '../../../assets/img/PraiseTeam.jpg';
+import _ from 'lodash';
+import { getPageFromDrupal } from '../../../utils/fetchJSON';
 
 class PraiseTeam extends Component {
+  constructor() {
+    super();
+    this.state = {
+      page: null,
+      breadcrumbs: `<a href="/">Home</a>
+          <span className="delimiter">›</span>
+          <span title="" className="nolink">Ministries</span>`
+    }
+  }
+
+  componentWillMount() {
+    var that = this;
+    getPageFromDrupal('PraiseTeam', function (data) {
+      that.setState({ page: data[0] });
+    });
+  }
   render() {
     return (
       <section>
@@ -11,16 +28,16 @@ class PraiseTeam extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Praise Team</h1>
+                  <h1>
+                    {this.state.page ? <span dangerouslySetInnerHTML={{ __html: this.state.page.title }} /> : ""}
+                  </h1>
                 </div>
               </div>
 
               <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
-                    <a href="/">Home</a>
-                    <span className="delimiter">›</span>
-                    <span title="" className="nolink">Ministries</span>
+                    {this.state.breadcrumbs ? <section dangerouslySetInnerHTML={{ __html: this.state.breadcrumbs }} /> : ""}
                   </div>
                 </div>
               </div>
@@ -36,28 +53,7 @@ class PraiseTeam extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-
-                          <h4 className="ministry-text">The music team of ACC is small but dedicated. Led by Jeetha, our primary aim is to support and enhance the congregational singing on Sunday mornings. However, there are other ways we seek to serve – for example, with other local churches, we sing Christmas carols at Armadale Hospital each year in December.</h4>
-                          <br />
-                          <img src={PraiseTeamImg} alt="" className="img img-responsive ministryImg image-center" />
-                          <br />
-                          <p className="subtext">
-                            Praise the LORD. <br />
-                            Praise God in his sanctuary; <br />
-                            praise him in his mighty heavens.<br />
-                            Praise him for his acts of power; <br />
-                            praise him for his surpassing greatness.<br />
-                            Praise him with the sounding of the trumpet, <br />
-                            praise him with the harp and lyre,<br />
-                            praise him with tambourine and dancing, <br />
-                            praise him with the strings and flute,<br />
-                            praise him with the clash of cymbals, <br />
-                            praise him with resounding cymbals.<br />
-                            Let everything that has breath praise the LORD. <br />
-                            Praise the LORD.<br />
-                            (Psalm 150)
-  
-                          </p>
+                          {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
                         </div>
 
 

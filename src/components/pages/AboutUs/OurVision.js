@@ -16,7 +16,7 @@ class OurVision extends Component {
 
     componentWillMount() {
         var that = this;
-        getPageFromDrupal('OurVision', function (data) {
+        getPageFromDrupal('Vision', function (data) {
             that.setState({ page: data[0] });
         });
     }
