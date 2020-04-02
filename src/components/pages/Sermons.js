@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import _ from 'lodash'
 import { decode } from 'he'
 import { getFromDrupalAPI } from '../../utils/fetchJSON';
+import { FaSpinner } from 'react-icons/fa'
 
 const SERMON_LIMIT = 1;
 
@@ -35,9 +36,9 @@ class Sermons extends Component {
     if (!this.state.sermons || !this.state.latestSermon || !this.state.recentSeries) {
       //var recentSeries = <div>Loading, please wait.</div>;
       //var latestSermon = <div>Loading, please wait.</div>;
-      var recentSeries = <div>Currently unavailable.</div>;
-      var latestSermon = <div>Currently unavailable.</div>;
-      var currentSeries = <div>Currently unavailable.</div>;
+      var recentSeries = <FaSpinner />;
+      var latestSermon = <FaSpinner />;
+      var currentSeries = <FaSpinner />;
     }
     else {
       var recentSeries = _.map(this.state.recentSeries, (series) => {
@@ -66,7 +67,7 @@ class Sermons extends Component {
         <div className="views-field views-field-title-1">
           <span className="field-content">{this.state.latestSermon.sermonseries ? <a href={'/series/' + this.state.latestSermon.series_id}>{decode(this.state.latestSermon.sermonseries)}</a> : ""}</span>  </div>
         <div>
-          {this.state.latestSermon.node_title ? <span><a href={`/sermon/${this.state.latestSermon.nid}`}>{this.state.latestSermon.node_title}</a></span> : <span><a href={`/sermon/${this.state.latestSermon.nid}`}>Untitled</a></span>}  </div>
+          {this.state.latestSermon.node_title ? <span><a href={`/sermon/${this.state.latestSermon.nid}`}>{decode(this.state.latestSermon.node_title)}</a></span> : <span><a href={`/sermon/${this.state.latestSermon.nid}`}>Untitled</a></span>}  </div>
         <div className="views-field views-field-field-preacher">
           <div className="field-content">{decode(this.state.latestSermon.preacher)}</div>  </div>  </div>);
 
@@ -75,7 +76,7 @@ class Sermons extends Component {
           <a href={'/series/' + this.state.latestSermon.series_id}><img src={this.state.latestSermon.series_img} width="600" height="450" alt="" /></a>
         </div>  </div>
         <div className="views-field views-field-title">
-          <span className="field-content"><a href={'/series/' + this.state.latestSermon.series_id}>{this.state.latestSermon.sermonseries}</a></span>  </div></section>)
+          <span className="field-content"><a href={'/series/' + this.state.latestSermon.series_id}>{decode(this.state.latestSermon.sermonseries)}</a></span>  </div></section>)
     }
 
     return (

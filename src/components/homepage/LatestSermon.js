@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
+import { FaSpinner } from 'react-icons/fa'
 
 import { getFromDrupalAPI } from '../../utils/fetchJSON';
 
@@ -25,8 +26,7 @@ class LatestSermon extends Component {
   render() {
 
     if (!this.state.latestSermon) {
-      //var sermonDetails = <i className="fa fa-spinner"></i>
-      var sermonDetails = <div>Currently Unavailable.</div>
+      var sermonDetails = <FaSpinner />
     }
     else {
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {

@@ -32,6 +32,7 @@ import OurTeam from './pages/AboutUs/OurTeam';
 import OurVision from './pages/AboutUs/OurVision';
 import OurHistory from './pages/AboutUs/OurHistory';
 import Search from './pages/Search';
+import COVID19 from './pages/COVID19';
 
 
 class OtherPageWrapper extends Component {
@@ -65,6 +66,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/BoysBrigades" component={BoysBrigades} />
           <Route exact path="/Helps" component={Helps} />
           <Route exact path="/Bread" component={BreadMinistry} />
+
+          <Route exact path="/covid-19" component={COVID19} />
 
           <Route exact path="/Search" component={Search} />
           <Route exact path="/Search/:query" component={Search} />

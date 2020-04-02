@@ -30,6 +30,7 @@ import './assets/nestor/css/color/blue.css';
 
 import './assets/css/custom.css';
 import './assets/css/events.css';
+import NotificationBanner from './components/NotificationBanner';
 
 class App extends Component {
   render() {
@@ -37,6 +38,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="*" component={Navigation} />
+          <Route path="*" component={NotificationBanner} />
           <Route exact path="/" component={HomePageWrapper} />
           <Route path="/:path" component={OtherPageWrapper} />
           <Route path="*" component={Footer} />

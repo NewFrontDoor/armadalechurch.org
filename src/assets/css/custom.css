@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 /*Fill latest sermon column with image*/
 .latestSermon-img{
     width: 100% !important;
@@ -226,3 +227,42 @@ input[type=text].search-bar{
   box-sizing: border-box;
 }
 
+.notification-banner{
+  background: red;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.notification-banner-text{
+  font-size: 16px;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.notification-banner-link{
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin: auto;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 11px 23px;
+  border: 2px solid;
+  border-color: gold;
+  color: gold;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.notification-banner-link:hover{
+  border-color: gold;
+  background-color: gold;
+  color: red;
+}

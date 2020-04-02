@@ -7,6 +7,7 @@ import _ from 'lodash'
 import { decode } from 'he'
 import { getFromDrupalAPI, searchDrupalSermons } from '../../utils/fetchJSON';
 import $ from 'jquery';
+import { FaSpinner } from 'react-icons/fa'
 
 import '../../assets/css/allsermonspage/css_ctvtxTMYPLy1gdv3lVTneGtWHVwWHoP476bpbqSql9o.css';
 import '../../assets/css/allsermonspage/css_nnBtPUJp1fJS2GsB41ThE6FDdZwUsGHSwaEUER2e1oo.css';
@@ -140,15 +141,14 @@ class Sermons extends Component {
 
   render() {
     if (!this.state.sermons) {
-      //var sermons = <tr><td>Loading, please wait.</td></tr>;
-      var sermons = <tr><td>Currently unavailable.</td></tr>;
+      var sermons = <FaSpinner />;
     }
     else {
       var tdPadding = { padding: "0px 5px 0px 5px" };
       var sermons = _.map(this.state.sermons, (sermon) => {
         return (
           <tr key={_.uniqueId()} className="odd even">
-            {sermon.node_title ? <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>{sermon.node_title}</a></td> : <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>Untitled</a></td>}
+            {sermon.node_title ? <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>{decode(sermon.node_title)}</a></td> : <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>Untitled</a></td>}
             {sermon.sermonseries ? <td style={tdPadding}><a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a></td> : <td style={tdPadding}></td>}
             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
