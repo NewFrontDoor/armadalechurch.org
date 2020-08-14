@@ -266,3 +266,12 @@ input[type=text].search-bar{
   background-color: gold;
   color: red;
 }
+
+/*MS Edge nav fix*/
+.tb-megamenu{
+  background-color: rgba(0,0,0,0);
+}
+
+.img-full-width{
+  width: 100%;
+}

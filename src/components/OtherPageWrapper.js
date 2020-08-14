@@ -33,6 +33,7 @@ import OurVision from './pages/AboutUs/OurVision';
 import OurHistory from './pages/AboutUs/OurHistory';
 import Search from './pages/Search';
 import COVID19 from './pages/COVID19';
+import BlogPage from './pages/BlogPage';
 
 
 class OtherPageWrapper extends Component {
@@ -71,6 +72,7 @@ class OtherPageWrapper extends Component {
 
           <Route exact path="/Search" component={Search} />
           <Route exact path="/Search/:query" component={Search} />
+          <Route exact path="/Blog" component={BlogPage} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

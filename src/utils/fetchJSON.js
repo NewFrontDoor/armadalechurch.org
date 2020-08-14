@@ -7,6 +7,8 @@ const DRUPAL_SEARCH_SERMONS = DRUPAL_URL + "all_sermons_api?display_id=services_
 const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
 const DRUPAL_GET_PAGE = DRUPAL_URL + "react_page_api?display_id=services_1&filters[page_title]=";
 const DRUPAL_SEARCH_PAGES = DRUPAL_URL + "search_pages_api?display_id=services_1&filters[search_query]=";
+const DRUPAL_BLOG_POSTS = "https://api.armadalechurch.org/api/all-blog-posts"
+const DRUPAL_FRONT_PAGE_IMAGE = "https://api.armadalechurch.org/api/front-page-image"
 
 //Example suffix: all_sermons_api?filters[preacher]=keith&filters[title]=reality
 
@@ -74,3 +76,24 @@ export function searchDrupalPages(page, callback) {
     })
 }
 
+export function getBlogPosts(callback) {
+  fetch(DRUPAL_BLOG_POSTS)
+    .then(resp => resp.json())
+    .then(function (data) {
+      callback(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+}
+
+export function getFrontPageImage(callback) {
+  fetch(DRUPAL_FRONT_PAGE_IMAGE)
+    .then(resp => resp.json())
+    .then(function (data) {
+      callback(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+}

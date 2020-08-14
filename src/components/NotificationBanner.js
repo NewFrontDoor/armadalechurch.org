@@ -6,7 +6,8 @@ class NotificationBanner extends Component {
     return (
       <div className="notification-banner">
         <p className="notification-banner-text">
-          All Armadale services are now only online.  <a className="notification-banner-link" href="/covid-19">Find out more</a>
+          {/*All Armadale Congregational Church services are now only online.  <a className="notification-banner-link" href="/covid-19">Find out more</a>*/}
+          All Armadale Congregational services have resumed in person, but are also livestreamed and recorded on YouTube.
         </p>
       </div>
     );
