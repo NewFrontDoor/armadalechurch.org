@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import LatestSermon from './LatestSermon';
 import WhereToFindUs from './WhereToFindUs';
 //import UpcomingEvents from './UpcomingEvents';
-import VerseOfTheDay from './VerseOfTheDay';
+import VerseOfTheDay from './VerseOfTheDayIFrame';
 
 class HomePageContent extends Component {
   render() {

@@ -9,7 +9,7 @@ import Sermons from './pages/Sermons';
 import SermonPage from './pages/SermonPage';
 import SermonSeriesPage from './pages/SermonSeriesPage';
 
-
+import WhoWeAre from './pages/AboutUs/WhoWeAre'
 import OurPeople from './pages/OurPeople';
 import Events from './pages/Events';
 
@@ -48,6 +48,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
 
+          <Route exact path="/WhoWeAre" component={WhoWeAre} />
           <Route exact path="/WhatWeBelieve" component={WhatWeBelieve} />
           <Route exact path="/SundayService" component={SundayService} />
           <Route exact path="/OurPeople" component={OurPeople} />

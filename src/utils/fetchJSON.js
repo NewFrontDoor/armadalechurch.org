@@ -4,7 +4,7 @@ import fetch from 'isomorphic-fetch';
 //Change this URL when the API is set up for the new website
 const DRUPAL_URL = "https://api.armadalechurch.org/api/views/";
 const DRUPAL_SEARCH_SERMONS = DRUPAL_URL + "all_sermons_api?display_id=services_1&filters";
-const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+const CORS_PROXY = 'http://localhost:8080/'
 const DRUPAL_GET_PAGE = DRUPAL_URL + "react_page_api?display_id=services_1&filters[page_title]=";
 const DRUPAL_SEARCH_PAGES = DRUPAL_URL + "search_pages_api?display_id=services_1&filters[search_query]=";
 const DRUPAL_BLOG_POSTS = "https://api.armadalechurch.org/api/all-blog-posts"
@@ -42,6 +42,7 @@ export function searchDrupalSermons(query, type, callback) {
     })
 }
 
+//fetch votd using a cors proxy -- currently not setup
 export function getVerseOfTheDay(url, callback) {
   fetch(CORS_PROXY + url)
     .then(resp => resp.json())

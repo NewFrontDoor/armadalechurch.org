@@ -87,6 +87,10 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WhoWeAre" >Who We Are</a>
+                                        </li>
+
+                                        <li className="tb-megamenu-item level-2 mega">
                                           <a href="/WhatWeBelieve" >What We Believe</a>
                                         </li>
 

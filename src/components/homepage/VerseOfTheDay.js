@@ -12,9 +12,11 @@ class VerseOfTheDay extends Component {
         var that = this;
 
 
-        getVerseOfTheDay('https://www.biblegateway.com/votd/get/?format=json', function (data) {
+        //can fetch votd data via a cors-anywhere proxy but none currently exists without setting up one specifically for this purpose
+        /*getVerseOfTheDay('https://www.biblegateway.com/votd/get/?format=json', function (data) {
             that.setState({ votd: data });
-        });
+        });*/
+
     }
 
     render() {
