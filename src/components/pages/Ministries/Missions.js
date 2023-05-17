@@ -1,22 +1,22 @@
 /* eslint-disable */
 import React, { Component } from "react";
 import _ from "lodash";
-import { getPageFromDrupal } from "../../utils/fetchJSON";
+import { getPageFromDrupal } from "../../../utils/fetchJSON";
 
-class Events extends Component {
+class Missions extends Component {
 	constructor() {
 		super();
 		this.state = {
 			page: null,
 			breadcrumbs: `<a href="/">Home</a>
           <span className="delimiter">›</span>
-          <span title="" className="nolink">Events</span>`
+          <span title="" className="nolink">Ministries</span>`
 		};
 	}
 
 	componentWillMount() {
 		var that = this;
-		getPageFromDrupal("Events", function (data) {
+		getPageFromDrupal("Missions", function (data) {
 			that.setState({ page: data[0] });
 		});
 	}
@@ -82,4 +82,4 @@ class Events extends Component {
 	}
 }
 
-export default Events;
+export default Missions;

@@ -25,7 +25,7 @@ class Navigation extends Component {
 	render() {
 		return (
 			<header className="header-1 region-0 block-0">
-				<div className="container">
+				<div className="nav-container">
 					<div className="row">
 						<div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
 							<a href="/">
@@ -173,6 +173,9 @@ class Navigation extends Component {
 																				<li className="tb-megamenu-item level-2 mega">
 																					<a href="/PraiseTeam">Praise Team</a>
 																				</li>
+																				<li className="tb-megamenu-item level-2 mega">
+																					<a href="/Missions">Missions</a>
+																				</li>
 																			</ul>
 																		</div>
 																	</div>
@@ -208,7 +211,7 @@ class Navigation extends Component {
 																				</li>
 
 																				<li className="tb-megamenu-item level-2 mega">
-																					<a href="/BoysBrigades">Boy's Brigades</a>
+																					<a href="/BoysBrigades">Boys' Brigades</a>
 																				</li>
 																				<li className="tb-megamenu-item level-2 mega">
 																					<a href="/Helps">Helps</a>
@@ -240,14 +243,16 @@ class Navigation extends Component {
 															rel="noreferrer noopener"
 															target="_blank"
 														>
-															Talks
+															Online Church
 														</a>
 													</li>
 
 													<li className="tb-megamenu-item level-1 mega">
 														<a href="/Events">Events</a>
 													</li>
-
+													<li className="tb-megamenu-item level-1 mega">
+														<a href="/Employment">Employment</a>
+													</li>
 													<li className="tb-megamenu-item level-1 mega">
 														<a href="/ContactUs" title="Contact Us">
 															Contact Us

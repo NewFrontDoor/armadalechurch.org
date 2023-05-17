@@ -1,277 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 /*Fill latest sermon column with image*/
-.latestSermon-img{
-    width: 100% !important;
-    height: 100% !important;
-  }
+.latestSermon-img {
+	width: 100% !important;
+	height: 100% !important;
+}
 
 /*Fix for overflowing text on gmaps*/
 .gm-style-iw {
-    width: auto !important;
-    max-width: 180px;
-    text-align: center;
-   }
-
-   
-/*Font color for gmap in footer*/
-   #content-map-footer>h4{
-    color: #2b2b2b;
-   }
-   #content-map-footer>p{
-    color: #777;
-   }
-
-   /*Hide map type toggle and street view selection from footer map*/
-   #map_canvas_footer>div>div> .gm-style-mtc , #map_canvas_footer>div>div>div>.gm-svpc{
-       display: none;
-   }   
-
-   .text-center {
-    text-align: center;
-  }
-  
-  .image-center {
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  /*Styling for the person model*/
-  .person-name{
-    font-size: 24px;
-  margin-bottom: 8px;
-  margin-top: 10px;
-  font-weight: 300;
-  line-height: 24px;
-  }
-  
-  .person-title{
-    font-size: 16px;
-    color: #a2a5a4;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: 600px) {
-  .logo{
-    max-height: 170px;
-    height: 130px;
-  }
-  }
-
-  .bg-color-theme {
-    background-color: #00003e;
-  }
-
-
-  
-  /*Mobile menu colour*/
-  .nestor-main-menu .navbar-toggle{
-      border: 1px solid #00003e !important;
-      background: #00003e !important;
-      color: #fff !important;
-  }
-
-.navbar-header{
-  text-align: center;
-  width:100%;
+	width: auto !important;
+	max-width: 180px;
+	text-align: center;
 }
-@media (min-width:768px) and (max-width:979px){
-  .navbar-toggle{
-    display: inline-block;
-    width: 250px;
-    border-radius: 0;
-    padding: 12px;
-    float: none;   
-  }
-  .nav-collapse{
-    margin-top: -55px !important;
-  }
+
+/*Font color for gmap in footer*/
+#content-map-footer > h4 {
+	color: #2b2b2b;
+}
+#content-map-footer > p {
+	color: #777;
+}
+
+/*Hide map type toggle and street view selection from footer map*/
+#map_canvas_footer > div > div > .gm-style-mtc,
+#map_canvas_footer > div > div > div > .gm-svpc {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.image-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Styling for the person model*/
+.person-name {
+	font-size: 24px;
+	margin-bottom: 8px;
+	margin-top: 10px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.person-title {
+	font-size: 16px;
+	color: #a2a5a4;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+@media (min-width: 600px) {
+	.logo {
+		max-height: 170px;
+		height: 130px;
+	}
+}
+
+.bg-color-theme {
+	background-color: #00003e;
+}
+
+/*Mobile menu colour*/
+.nestor-main-menu .navbar-toggle {
+	border: 1px solid #00003e !important;
+	background: #00003e !important;
+	color: #fff !important;
+}
+
+.navbar-header {
+	text-align: center;
+	width: 100%;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar-toggle {
+		display: inline-block;
+		width: 250px;
+		border-radius: 0;
+		padding: 12px;
+		float: none;
+	}
+	.nav-collapse {
+		margin-top: -55px !important;
+	}
 }
 
 @media (max-width: 767px) {
-    .nestor-main-menu .navbar-toggle {
-      width: 100%;
-      max-width: 250px;
-      margin-top: 30px;
-    }
+	.nestor-main-menu .navbar-toggle {
+		width: 100%;
+		max-width: 250px;
+		margin-top: 30px;
+	}
 
-    .nav-collapse{
-      margin-top: -55px !important;
-    }
+	.nav-collapse {
+		margin-top: -55px !important;
+	}
 }
 
-  /*Styling for sermon load more and search*/
-  
-.sermon-load-more, .sermon-search-button {
-    padding: 2px 35px !important;
-    border-color: #00003e;
-    color: #00003e;
-  }
-  
+/*Styling for sermon load more and search*/
 
-  /*Change btn border color to fit theme*/
-  
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    border-color: #00003e !important;
-    background-color: #00003e !important;
-  }
-  
-  .btn-primary{
-    border-color: #00003e;
-    color: #00003e;
-  }
-  
-  .form-control:focus{
-    border-color: #00003e;
-  }
-
-#votd{
-  padding-top: 60px;
+.sermon-load-more,
+.sermon-search-button {
+	padding: 2px 35px !important;
+	border-color: #00003e;
+	color: #00003e;
 }
 
-.header-custom-color{
-  color: #00003e;
+/*Change btn border color to fit theme*/
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+	border-color: #00003e !important;
+	background-color: #00003e !important;
+}
+
+.btn-primary {
+	border-color: #00003e;
+	color: #00003e;
+}
+
+.form-control:focus {
+	border-color: #00003e;
+}
+
+#votd {
+	padding-top: 60px;
+}
+
+.header-custom-color {
+	color: #00003e;
 }
 
 /* Site Text color if desired to be black*/
 
-body{
-  color: #000;
+body {
+	color: #000;
 }
 
-.subtext{
-  font-size: 16px;
-  font-style: italic;
-  text-align: justify;
+.subtext {
+	font-size: 16px;
+	font-style: italic;
+	text-align: justify;
 }
 
-.historyImg{
-  margin-left: 15px;
-  width: 60%;
-  float: right;
-  max-width: 600px;
+.historyImg {
+	margin-left: 15px;
+	width: 60%;
+	float: right;
+	max-width: 600px;
 }
 
-.ministryImg{
-  max-height: 400px;
+.ministryImg {
+	max-height: 400px;
 }
 
 @media (max-width: 767px) {
-  .historyImg {
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
+	.historyImg {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
 }
 
 @media (min-width: 780px) {
-  .sm-br {
-    display: none;
-  }
+	.sm-br {
+		display: none;
+	}
 }
 
-.our-team-text{
-  padding: 10px;
-  font-family: 'Lato' !important;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;  
-  line-height: 26px;
-  text-align: justify;
+.our-team-text {
+	padding: 10px;
+	font-family: "Lato" !important;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: justify;
 }
 
-.ministry-text{
-  font-family: 'Lato' !important;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;  
-  line-height: 26px;
-  text-align: justify;
+.ministry-text {
+	font-family: "Lato" !important;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: justify;
 }
 
 @media (min-width: 980px) {
-  header{
-    background-color: #0d113b;
-  }
+	header {
+		background-color: #0d113b;
+	}
 }
 
 @media (max-width: 979px) {
-  #logo-region{
-    background-color: #0d113b;
-  }
-  .tb-megamenu{
-    padding-top: 0;
-  }
-  .nestor-main-menu .navbar-toggle {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+	#logo-region {
+		background-color: #0d113b;
+	}
+	.tb-megamenu {
+		padding-top: 0;
+	}
+	.nestor-main-menu .navbar-toggle {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 }
 
-
-
-.tb-megamenu .nav > li > a{
-  color: #fff;
+.tb-megamenu .nav > li > a {
+	color: #fff;
 }
 
 /*Search styling*/
-input[type=text].search-bar{
-  width: 90%;
-  height: 40px;
-  padding: 10px 16px;
-  margin: 15px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+input[type="text"].search-bar {
+	width: 90%;
+	height: 40px;
+	padding: 10px 16px;
+	margin: 15px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
-.notification-banner{
-  background: red;
-  display: block;
-  text-align: center;
-  padding: 15px;
-  color: #fff;
+.notification-banner {
+	background: red;
+	display: block;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
 }
 
-.notification-banner-text{
-  font-size: 16px;
-  font-family: "Lato",sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #fff;
+.notification-banner-text {
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
 }
 
-.notification-banner-link{
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  margin: auto;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  padding: 11px 23px;
-  border: 2px solid;
-  border-color: gold;
-  color: gold;
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 10px;
+.notification-banner-link {
+	box-sizing: border-box;
+	margin: 0;
+	min-width: 0;
+	margin: auto;
+	-webkit-text-decoration: none;
+	text-decoration: none;
+	padding: 11px 23px;
+	border: 2px solid;
+	border-color: gold;
+	color: gold;
+	display: inline-block;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-left: 10px;
 }
 
-.notification-banner-link:hover{
-  border-color: gold;
-  background-color: gold;
-  color: red;
+.notification-banner-link:hover {
+	border-color: gold;
+	background-color: gold;
+	color: red;
 }
 
 /*MS Edge nav fix*/
-.tb-megamenu{
-  background-color: rgba(0,0,0,0);
+.tb-megamenu {
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.img-full-width{
-  width: 100%;
+.img-full-width {
+	width: 100%;
+}
+
+.nav-container {
+	max-width: 1300px;
+	margin: 0 auto;
 }

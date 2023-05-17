@@ -29,11 +29,6 @@ class Welcome extends Component {
 																	found a home among us. But whether you're convinced or simply curious about
 																	Christianity, we'd love for you to connect with us.
 																</p>
-																<img
-																	className="img img-responsive"
-																	src={AdvertImg}
-																	alt="Advertisement for Lead Pastor Position, contact accpastoralteam@gmail.com for more information."
-																/>
 															</div>
 															{/*<VOTD />*/}
 														</div>

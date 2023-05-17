@@ -3,20 +3,20 @@ import React, { Component } from "react";
 import _ from "lodash";
 import { getPageFromDrupal } from "../../utils/fetchJSON";
 
-class Events extends Component {
+class Employment extends Component {
 	constructor() {
 		super();
 		this.state = {
 			page: null,
 			breadcrumbs: `<a href="/">Home</a>
           <span className="delimiter">›</span>
-          <span title="" className="nolink">Events</span>`
+          <span title="" className="nolink">Employment</span>`
 		};
 	}
 
 	componentWillMount() {
 		var that = this;
-		getPageFromDrupal("Events", function (data) {
+		getPageFromDrupal("Employment", function (data) {
 			that.setState({ page: data[0] });
 		});
 	}
@@ -82,4 +82,4 @@ class Events extends Component {
 	}
 }
 
-export default Events;
+export default Employment;
