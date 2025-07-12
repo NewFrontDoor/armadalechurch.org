@@ -34,6 +34,12 @@ class Navigation extends Component {
 						</div>{" "}
 						{/* /logo-region */}
 						<div id="menu-region" className="col-xs-12 col-md-9">
+							{/* Banner for 125 years celebration */}
+							<div className="anniversary-banner" style={{textAlign: 'center', padding: '6px 0', borderRadius: '0 0 10px 10px', boxShadow: '0 2px 6px rgba(0,0,0,0.05)', marginBottom: '0'}}>
+								<a href="/events" >
+									<img src='/img/2025_banner.png' alt="125 Years Celebration" style={{maxWidth: '20rem', height: 'auto'}} />
+								</a>
+							</div>
 							<div className="region region-header">
 								<div className="block block-menu hidden-md hidden-lg">
 									<div className="content">
@@ -54,7 +60,7 @@ class Navigation extends Component {
 								</div>
 								<div className="block block-tb-megamenu">
 									<div className="content">
-										<div className="tb-megamenu tb-megamenu-main-menu">
+										<div className="tb-megamenu tb-megamenu-main-menu" style={{marginTop: '0', paddingTop: '0'}}>
 											<div className="nav-collapse  always-show">
 												<ul className="tb-megamenu-nav nav level-0 items-5">
 													<li className="tb-megamenu-item level-1 mega dropdown">
@@ -216,9 +222,7 @@ class Navigation extends Component {
 																				<li className="tb-megamenu-item level-2 mega">
 																					<a href="/Helps">Helps</a>
 																				</li>
-																				<li className="tb-megamenu-item level-2 mega">
-																					<a href="/Bread">Bread Ministry</a>
-																				</li>
+																				
 
 																				<li className="tb-megamenu-item level-2 mega">
 																					<a

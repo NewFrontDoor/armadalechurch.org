@@ -280,3 +280,21 @@ input[type="text"].search-bar {
 	max-width: 1300px;
 	margin: 0 auto;
 }
+
+.event-card {
+  background: #fff;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 20px;
+  max-width: 400px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+.event-card p {
+  margin-bottom: 1em;
+}
+.event-card a {
+  color: #2a5d9f;
+  text-decoration: underline;
+}

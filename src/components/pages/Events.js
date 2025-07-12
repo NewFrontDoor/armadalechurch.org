@@ -26,6 +26,7 @@ class Events extends Component {
 				<div
 					id="top-content-region"
 					className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1"
+		
 				>
 					<div className="container">
 						<div className="row">
@@ -60,14 +61,37 @@ class Events extends Component {
 									<div id="block-system-main" className="block block-system">
 										<div className="content">
 											<div className="node node-page clearfix">
-												<div className="content">
-													{this.state.page ? (
+												<h2 style={{textAlign: 'center', marginBottom: '20px'}}>2025 - Celebrating 125 years</h2>
+												<div className="content" style={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
+													{/* {this.state.page ? (
 														<section dangerouslySetInnerHTML={{ __html: this.state.page.content }} />
 													) : (
 														<h2>
 															<i className="fa fa-spinner"></i>
 														</h2>
-													)}
+													)} */}
+
+												
+
+													<div style={{display: 'flex', flexDirection: 'row',flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
+													<div className="event-card">
+													
+													<p>
+													In 2025, our church is celebrating 125 years. While the original church building was not built until 3 years later, our people started meeting in Armadale in 1900. To celebrate, we are hosting a thanksgiving service and lunch on Sunday 16<sup>th</sup> October. The service starts at our usual time of 9.30 am.
+													</p>
+													<p>
+													If you would like more details, an invitation, or to share a memory, photo, or other mementoes or documents, please contact us at 
+													<a href="mailto:125@armadalechurch.org"> 125@armadalechurch.org</a>.
+													</p>
+													</div>
+
+													<div className="event-card">
+														<p>Join us as we host Dr Ron Neller from CMI Australia  on 1st November, starting with afternoon tea at 3pm, and the presentation at 4pm.</p>
+														<p>Share the <a href="/img/event_creationist.jpg" download>flyer</a> with your church, friends, and family. All are welcome. For more information, or to RSVP(so we have enough!) email us at <a href="mailto:info@armadalecc.org.au">info@armadalecc.org.au</a></p>
+													<img src="/img/event_creationist.jpg" alt="creationist" style={{width: '100%', height: 'auto'}} />
+													</div>
+													</div>
+													<p>If you would like to submit an event, please contact us at <a href="mailto:info@armadalecc.org.au">info@armadalecc.org.au</a></p>
 												</div>
 											</div>
 										</div>
