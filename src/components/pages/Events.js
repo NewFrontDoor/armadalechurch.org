@@ -73,7 +73,7 @@ class Events extends Component {
 
 												
 
-													<div style={{display: 'flex', flexDirection: 'row',flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
+													<div style={{display: 'flex', flexDirection: 'column',flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
 													<div className="event-card">
 													
 													<p>
@@ -85,7 +85,7 @@ class Events extends Component {
 													</p>
 													</div>
 
-													<div className="event-card">
+													<div className="event-card" >
 														<p>Join us as we host Dr Ron Neller from CMI Australia  on 1st November, starting with afternoon tea at 3pm, and the presentation at 4pm.</p>
 														<p>Share the <a href="/img/event_creationist.jpg" download>flyer</a> with your church, friends, and family. All are welcome. For more information, or to RSVP(so we have enough!) email us at <a href="mailto:info@armadalecc.org.au">info@armadalecc.org.au</a></p>
 													<img src="/img/event_creationist.jpg" alt="creationist" style={{width: '100%', height: 'auto'}} />

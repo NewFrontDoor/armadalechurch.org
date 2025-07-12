@@ -68,6 +68,12 @@ class Missions extends Component {
 															<i className="fa fa-spinner"></i>
 														</h2>
 													)}
+													<p>
+														Missions
+For the last 125 years we have been contributing to both local and worldwide evangelisation. Each year we tithe our income to Missions, in addition to supporting our own ministries that reach out to the community such as our College and Brigades. 
+We currently contribute to three missionary families. One family in Europe, one in Asia, and one in Australia. We give regularly to both local and overseas missions such as Challenge Newspaper, Mukti, Barnabas Aid, Gideons, Voice of the Martyrs, and Deaf Ministries International. We also support the missions of Dale Christian College (such as Missions trips and Operation Christmas Child). We have an active Missions committee, regularly invite mission representatives to speak at our church, and have a special focus on Missions each August.
+If you represent a Mission and would like to visit, please contact pastor@armadalechurch.org to see if we are a good fit.
+	</p>
 												</div>
 											</div>
 										</div>
